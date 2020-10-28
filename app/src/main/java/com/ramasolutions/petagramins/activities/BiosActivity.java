@@ -10,6 +10,8 @@ import androidx.appcompat.widget.Toolbar;
 import com.ramasolutions.petagramins.R;
 import com.ramasolutions.petagramins.pojo.InformacionDesarrollador;
 
+import java.util.Objects;
+
 public class BiosActivity extends AppCompatActivity {
 
     TextView tvNombreBio;
@@ -28,7 +30,7 @@ public class BiosActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

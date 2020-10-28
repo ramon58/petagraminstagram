@@ -15,6 +15,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.tabs.TabLayout;
 import com.ramasolutions.petagramins.activities.BiosActivity;
+import com.ramasolutions.petagramins.activities.ConfigurarCuentaActivity;
 import com.ramasolutions.petagramins.activities.ContactoActivity;
 import com.ramasolutions.petagramins.activities.MisFavoritos;
 import com.ramasolutions.petagramins.main.SectionsPagerAdapter;
@@ -86,6 +87,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_favorites:
                 Intent goToFavorites = new Intent(MainActivity.this, MisFavoritos.class);
                 startActivity(goToFavorites);
+                break;
+
+            case R.id.action_configurar:
+                Intent goToConfigurar = new Intent(MainActivity.this, ConfigurarCuentaActivity.class);
+                startActivity(goToConfigurar);
                 break;
 
         }

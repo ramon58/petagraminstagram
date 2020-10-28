@@ -17,6 +17,7 @@ import com.ramasolutions.petagramins.db.Database;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MisFavoritos extends AppCompatActivity {
 
@@ -32,7 +33,7 @@ public class MisFavoritos extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

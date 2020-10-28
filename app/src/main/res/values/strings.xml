@@ -1,8 +1,10 @@
 <resources>
     <string name="app_name">Petagram Ins</string>
+    <string name="app_title">Petagram</string>
     <string name="action_contact">Contacto</string>
     <string name="action_about">Acerca de</string>
     <string name="action_favorites">Favoritos</string>
+    <string name="action_configurar">Configurar Cuenta</string>
     <string name="pic_transition">pic transition</string>
     <string name="tab_text_1">mascotas</string>
     <string name="tab_text_2">perfil</string>
@@ -45,5 +47,9 @@
                     "Desarrollo de aplicaciones con Android" de Coursera / UNAM. </string>
     <string name="app_version">0.0.3</string>
     <string name="app_fecha_desarrollo">Octubre 2020</string>
+
+    <string name="btnEnviar">Enviar Comentario</string>
+    <string name="btnGuardarCuenta">Guardar Cuenta</string>
+    <string name="confCuenta">Configurar Cuenta</string>
 
 </resources>

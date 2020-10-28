@@ -15,6 +15,8 @@ import androidx.appcompat.widget.Toolbar;
 import com.ramasolutions.petagramins.R;
 import com.squareup.picasso.Picasso;
 
+import java.util.Objects;
+
 public class DetallesMascota extends AppCompatActivity {
 
     public static final String KEY_EXTRA_URL = "url";
@@ -29,7 +31,7 @@ public class DetallesMascota extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 

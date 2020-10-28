@@ -22,4 +22,9 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/ic_action_star_rating"/>
 
+    <item
+        android:id="@+id/action_configurar"
+        android:orderInCategory="103"
+        android:title="@string/action_configurar"
+        app:showAsAction="never"/>
 </menu>

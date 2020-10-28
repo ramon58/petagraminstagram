@@ -11,6 +11,7 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.ramasolutions.petagramins.R;
 
+import java.util.Objects;
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -37,7 +38,7 @@ public class ContactoActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.mytoolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
